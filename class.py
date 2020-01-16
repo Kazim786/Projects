@@ -1,0 +1,155 @@
+# print("I'm a String")
+# # Use hashtag for comments. To comment out entire block of code you use command and forward slash. Command Z undos any errors or anything you do.
+#Concactenation
+#print("hello " + "world")
+#print("hello \nworld")
+#a = 20
+#b = 15
+#c = 3
+#print (a + b + c)
+
+#name = "Kazim"
+#lname = "Shabbir"
+
+#output = "good morning {0} {1} {1}".format(name,lname)
+#print(output)
+#output = f' hello world {student1} {student2}' #ask about the F thing
+# consolelog = input("Enter your name")
+# print(consolelog)
+# output = f'Hello {consolelog}'
+# print(output)
+# dt = type(consolelog)
+# print(dt)
+# input_number_from_user = input("Insert a number ")
+# print(type(input_number_from_user))
+# casted_output = int(input_number_from_user)
+# print(type(casted_output))
+# some_math = casted_output * 7
+# print(some_math)
+# age = 26
+# if True:
+#     print(age)
+# name = input("Enter your name")
+# if (name == "Kazim" ) :
+#     print(name) #Get clarity on this
+# greeting = "Hello {}, it is very nice to meet you and your friend {}!"
+# name_of_user = input("What is your name? ")
+# length_of_name = len(name_of_user)
+# if length_of_name > 0:
+#     name_of_friend = input("What is your friend's name? ")
+#     print(greeting.format(name_of_user, name_of_friend))
+# else:
+#     print("OK, I'll ask again some other time.")
+# F string
+
+# name_of_user = input("What is your name? ")
+# length_of_name = len(name_of_user)
+# if length_of_name > 0:
+#     name_of_friend = input("What is your friend's name? ")
+#     greeting = f"Hello {name_of_user}, it is very nice to meet you and your friend {name_of_friend}!"
+#     print(greeting)
+# else:
+#     print("OK, I'll ask again some other time.")
+# userInput = input("Is your name Hussain?") 
+# if(userInput == "Hussain"):
+#     print("Hurray!")
+# elif(userInput == "Bob"):
+#     print("No!")
+# else:
+#     print("No comment")
+
+#WEDNESDAY WEEK1
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers[1])
+# numbers[0] = "Monday"
+# print(numbers)
+# numbers.append("4") #adding something to the end of the list.
+# print(numbers)
+# todos = ["pet the cat", "go to work", "shop for groceries", 
+# "go home", "feed the cat"]
+# todos.append("binge watch a show")
+# todos.append("go to sleep")
+# print(todos)
+# index = 0
+# while index < len(todos):
+#     print(f'{index} : {todos[index]}' )
+#     index += 1
+# a = [1, 4, 7, 9, 10]
+# b = [4, 6, 8, 9]
+# print(a)
+# print(b)
+# print(a+b) #combining strings
+# todos.extend(["binge watch a show", "go to sleep"])
+# list_a = [1, 4, 7, 9]
+# list_b = [5, 7, 9]
+# print(list_a + list_b)
+#concactenation doesnt change the current lists that you have.
+# list_1 = []
+# to_add = input("Add items to the list ")
+# while len(to_add) > 0:
+#     list_1.extend(to_add)
+#     print(list_1)
+#     to_add = input("Want more? ")
+#     print(list_1)
+   
+# numbers = [1, 2, 3, 4, 5]
+# numbers [2:4]
+# new_list = numbers[2:4]
+# print(new_list)
+# numbers.insert(3, 6)
+# print(numbers)
+# numbers = [1, 2, 3, 4, 5]
+# while(len(numbers) > 0):
+#     print(numbers.pop())
+#     print(numbers)
+# print("finished")
+# numbers = [1, 2, 3, 4, 5]
+# result = numbers.index(3)
+# print(result)
+# a = [1, 2]
+# example = a * 3
+# print(example)
+# x = [[2,6],[6,2],[8,2],[5,12]]
+# print(x[2])
+# print(x[2][1])
+# myTuple = (1, 4, 6, "word")
+# myTuple[1] = 34
+# print(myTuple[1]) << CLARITY
+# alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# for character in alphabet:
+#     print(character)
+# In class assignment, create a loop that prints out every other numbers, 1, 3, 5, 7....1000
+# for number in range(1, 1001, 2):
+#   print(number)
+#   # 1 + 2 =3 (and 1 is where youre starting from, and 2 is what you are adding it by because its every other number)
+# for o_index in range (1, 11):
+#     for i_index in range (1, 10):
+#         total = o_index * i_index
+#         print(str(o_index) + "X" + str(i_index) + "=" + str(total))
+
+
+# Thursday 
+# count = 0
+# while count < 3:
+#     print("Hello")
+#     count += 1
+
+#Week - Days nested loop
+# Week = [1, 2, 3, 4, 5, 6]
+# Days = ["Mon", "Tues", "Wednesday", "Thursday", "Friday"]
+# subjects = []
+# subject_entry = input("Enter subjects ")
+
+# for outter_variable in Week:
+#     weekList = []
+#     print(outter_variable)
+#     for inner_variable in Days: 
+#         #weekList.append(inner_variable)
+#         print (inner_variable)
+#         subject_entry = input("Enter subjects ")
+#         for inner_inner_var in range (1):
+#             subjects.append(subject_entry)
+#             print(subjects)
+#^^^^^^^^^VERONICA WILL HELP FIX THIS
+
+    
