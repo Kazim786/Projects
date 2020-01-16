@@ -137,19 +137,92 @@
 #Week - Days nested loop
 # Week = [1, 2, 3, 4, 5, 6]
 # Days = ["Mon", "Tues", "Wednesday", "Thursday", "Friday"]
-# subjects = []
-# subject_entry = input("Enter subjects ")
+# subjects = ["Math", "sci", "english"]
 
 # for outter_variable in Week:
-#     weekList = []
-#     print(outter_variable)
-#     for inner_variable in Days: 
-#         #weekList.append(inner_variable)
-#         print (inner_variable)
-#         subject_entry = input("Enter subjects ")
-#         for inner_inner_var in range (1):
-#             subjects.append(subject_entry)
-#             print(subjects)
-#^^^^^^^^^VERONICA WILL HELP FIX THIS
+#     print("Week", outter_variable)
+#     for inner_var in Days:
+#         print("\t", inner_var)
+#         for inner_inner_var in subjects:
+#             print('\t\t', inner_inner_var)
+
+
+# myVar = 1
+# myVar2 = 2 
+# def greeting():
+#     print("Hello world")
+# if (myVar == 1):
+#     print('Hello')
+
+# greeting()
+
+# def print_students():
+#     print("Day 1: Students in SRE class")
+#     print("lecture: git 101")
+#     print("Shu")
+#     print("Thomas")
+#     print("Gustavo")
+#     print("Alim")
+# print("Day 2: Students in SRE class")
+# print("lecture: git 102")
+# print_students()
+
+    
+# print("Day 3: Students in SRE class")
+# print("lecture: python 101")
+# print_students()
+
+# def greeting(person):
+#     print('hello', person)
+# greeting('Kazim')
+
+# def add(num1, num2):
+#     print(num1 + num2)
+    
+# add(2, 3)
+
+# def cal_avg(param1, param2, param3, param4):
+
+#     sum = param1 + param2 + param3 + param4
+#     average = sum/4
+#     return average
+# result = cal_avg(4, 6, 9, 0)
+# print(result)
+
+# Class Exercise, Find the average of any given list with your function: 
+
+# def the_average(numberList):
+#     total = 0
+#     for i in numberList:
+#         equals = sum(numberList)/len(numberList) #DONT FORGET WHEN DOING AVERAGE THE SUM AND LEN STATEMENTS
+#         return equals
+    
+
+# my_list = [3, 5, 19, 0, 18]
+# print(the_average(my_list))
+# my_list2 = [2, 5, 8, 10]
+# print(the_average(my_list2)) 
+
+# Tuple practice:
+# def myFunction(num1, num2, num3):
+#     return num1*2, num2*3, num3*4
+# # result = myFunction(3, 6, 9)
+# # print(type(result))
+# # print(result)
+
+
+# More function practice
+
+# def greeting(name):
+#     print(f'Hello {name}')
+# #*************************** scope of this function
+# students = ['Kazim', 'John', 'Karim']
+# for i in students:
+#     greeting(i) # Functions called in this loop to perform its function.
+# print('bye')
+
+
+
+
 
     
