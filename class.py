@@ -196,12 +196,12 @@
 #     for i in numberList:
 #         equals = sum(numberList)/len(numberList) #DONT FORGET WHEN DOING AVERAGE THE SUM AND LEN STATEMENTS
 #         return equals
-    
-
 # my_list = [3, 5, 19, 0, 18]
 # print(the_average(my_list))
 # my_list2 = [2, 5, 8, 10]
 # print(the_average(my_list2)) 
+
+# End of exercise :)
 
 # Tuple practice:
 # def myFunction(num1, num2, num3):
@@ -221,7 +221,17 @@
 #     greeting(i) # Functions called in this loop to perform its function.
 # print('bye')
 
-
+TAX_RATE = .09  # 9 percent tax
+COST_PER_SMALL_WIDGET = 5.00
+COST_PER_LARGE_WIDGET = 8.00
+def calculateCost(nSmallWidgets, nLargeWidgets):
+    subTotal = (nSmallWidgets * COST_PER_SMALL_WIDGET) + (nLargeWidgets * COST_PER_LARGE_WIDGET)
+    taxAmount = subTotal * TAX_RATE
+    totalCost = subTotal + taxAmount
+    return totalCost
+total1 = calculateCost(4, 8)  #  4 small and 8 large widgets
+print('Total for first order is', total1)
+total2 = calculateCost(12, 15)
 
 
 
