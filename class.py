@@ -221,18 +221,16 @@
 #     greeting(i) # Functions called in this loop to perform its function.
 # print('bye')
 
-TAX_RATE = .09  # 9 percent tax
-COST_PER_SMALL_WIDGET = 5.00
-COST_PER_LARGE_WIDGET = 8.00
-def calculateCost(nSmallWidgets, nLargeWidgets):
-    subTotal = (nSmallWidgets * COST_PER_SMALL_WIDGET) + (nLargeWidgets * COST_PER_LARGE_WIDGET)
-    taxAmount = subTotal * TAX_RATE
-    totalCost = subTotal + taxAmount
-    return totalCost
-total1 = calculateCost(4, 8)  #  4 small and 8 large widgets
-print('Total for first order is', total1)
-total2 = calculateCost(12, 15)
+# Friday week 1
 
+#Creating dictionary
 
+my_dictionary = {
+
+    "hello" : "wordld",
+    "square_of_2" : 4, 
+    0 : 1
+}
+print(my_dictionary)
 
     
