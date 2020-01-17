@@ -3,7 +3,7 @@ phoneBook = {"key" : "281-701-8297" }
 
 def electric_PhoneBk (phone_Book):
 
-    "Electronic phone book"
+    print("Electronic phone book")
     print((input("1. Look up an entry" + "\n\n" + "2. Set an entry " + "\n\n" + "3. Delete an entry" + "\n\n" + "4. List all entries" + "\n\n" + "5. Quit")))
     ask = int(input("What do you want to do (1-5)? "))
     key_word = input("Enter the key ")
