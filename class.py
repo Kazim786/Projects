@@ -225,12 +225,51 @@
 
 #Creating dictionary
 
-my_dictionary = {
+# my_dictionary = {
 
-    "hello" : "wordld",
-    "square_of_2" : 4, 
-    0 : 1
-}
-print(my_dictionary)
+#     "hello" : "wordld",
+#     "square_of_2" : 4, 
+#     0 : 1
+# }
 
-    
+#How to add to a dictionary:
+# my_dictionary["First_name"] = "Veronica"
+# printing entire dictionary --> print(my_dictionary)
+
+# printing key to find value --> print(my_dictionary["hello"]) 
+# print(my_dictionary.get("wordld"))   
+
+#Tuple 
+# my_tuple = (3, 4, 5, 6)
+# v1, v2, v3, v4 = my_tuple
+# print(v1) #Unlike lists you cant add values to a tuple b/c its immutable. This method is called destructuring..
+
+#Nesting 
+
+#contacts = [{key : value}, {key : value}, {key : value}] #This has 3 individual dictionaries
+#Since this is inside a list, you can access these individual dictionaries like you would access any item on a list. 
+# You can say, contact[0] = {key : value}
+
+# contact = [
+#     {
+#         'first_name': 'Phillip',
+#         'last_name': 'Guo',
+#         'email': 'phillip.guo@gmail.com',
+#         'phone':{
+#             'work':'837-494-3948',
+#             'cell': '234-897-4933'
+#         }
+#     },
+#     {
+#         'first_name': 'Mark',
+#         'last_name': 'Guzdial',
+#         'email': 'mark.guzdial@gatech.edu',
+#         'phone':{
+#             'work':'484-569-3466',
+#             'cell': '493-485-9845'
+#         }
+#     }
+# ]
+# print(contact[0]['first_name'])
+
+#How to add to a dictionary
