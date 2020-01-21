@@ -192,17 +192,36 @@
 # car.printInfo()
 
 class friends:
-    def __init__ (self, fname, phone_number, email):
+    def __init__ (self, fname, phone_number, email,):
         self.fname = fname
         self.phone_number = phone_number
         self.email = email
+        self.my_friends = []
+        
     def greet(self, other_guy):
         print(f'Hello {other_guy.fname}, I am {self.fname}!') #dont forget that self refers to the first person object
+    def print_contact_info(self):
+        print(f'{self.phone_number}')
+    def add_friend(self, name):
+        
+        self.my_friends.append(name)
+        # print(self.my_friends[0].fname)
+        for O in self.my_friends:
+            print(O.fname, O.email)
+
+    
 
 
 sonny = friends("sonny", "832-220-9999", "sonny@hotmail.com")
 jordan = friends("jordan", "281-209-1333", "jordan@hotmail.com")
-sonny.greet(jordan)
-jordan.greet(sonny)
-print(f'Contact info of Sonny, {sonny.fname}, {sonny.phone_number}, {sonny.email}')
-print(f'Contact info of Jordan, {jordan.fname}, {jordan.phone_number}, {jordan.email}')
+# sonny.greet(jordan)
+# jordan.greet(sonny)
+# sonny.print_contact_info()
+# jordan.print_contact_info()
+# sonny.my_friends.append(jordan)
+# jordan.my_friends.append(sonny)
+# print(len(jordan.my_friends))
+# print(jordan.my_friends)
+jordan.add_friend(sonny)
+jordan.add_friend(sonny)
+jordan.add_friend(sonny)
