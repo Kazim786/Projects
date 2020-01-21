@@ -57,5 +57,32 @@
 # #Age is a variable that is storing the info from the object sammy and its method called age. When age variable prints 
 # #it shows the results of the calculations from the age method in the object of Sammy. 
 
+# Why class's are better than objects.
+def Greeting(name):
+    count = 0
+    print(f'Hello {name}')
+    count += 1
+    print(count)
 
+Greeting("Kazim")
+Greeting("Ali")
+Greeting("Muhammad")
+# Count doesnt store how many times its ran. It resets each time. 
+# Objects RETAIN STATE, hence its better to have classes.
+
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#         self.count = 0
+#     def greeting(self):
+#             print(f'hello {self.name}')
+#             self.count += 1
+#     def printCount(self):
+#             print(self.count)
+
+# alina = Person("alina")
+
+# alina.greeting("alina")
+# alina.greeting("alina")
+# alina.printCount()
 
