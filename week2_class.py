@@ -95,13 +95,109 @@
 # Write a print statement to print the contact info (email and phone) of Sonny.
 # Write another print statement to print the contact info of Jordan.
 
+# class friends:
+#     def __init__ (self, fname, phone_number, email):
+#         self.fname = fname
+#         self.phone_number = phone_number
+#         self.email = email
+#     def greet(self, other_guy):
+#         print("Hello {other_guy.fname}, I am {self.fname}!") #dont forget that self refers to the first person object
+
+
+# sonny = friends("sonny", "832-220-9999", "sonny@hotmail.com")
+# jordan = friends("jordan", "281-209-1333", "jordan@hotmail.com")
+# sonny.greet(jordan)
+# jordan.greet(sonny)
+# print(f'Contact info of Sonny, {sonny.fname}, {sonny.phone_number}, {sonny.email}')
+# print(f'Contact info of Jordan, {jordan.fname}, {jordan.phone_number}, {jordan.email}')
+
+# Has some errors that need to be fixed ^^^^^^^^^
+
+# class Person:
+#     def __init__ (self, name):
+#         self.name = name
+#         self.count = 0
+#     def greet (self):
+#         self._greet()
+#     def _greet (self):
+#         self.count += 1
+#     if self.count > 1:
+#         print("Stop being so nice")
+#         self.__reset_count()
+#     else:
+#         print("Hello", self.name)
+#     def __reset_count(self):
+#         self.count = 0
+
+# alex = Person("alex")
+# alex.greet()
+# alex.greet()
+#HAS ERRORS THAT NEED TO BE FIXED ^^^^^^^^^^
+
+#Inheritance
+# class VString(str):
+#     def reverse(self, name):
+#         rstring = ""
+
+#         for char in name:
+#             rstring = char + rstring
+#         return rstring
+
+# myString = VString('Hello') #myString is an object of the VString class
+# print(myString.capitalize())
+# backwards = myString.reverse("hello")
+# print(backwards)
+
+#Implicit inheritance #GET CLARITY
+# class Parent(object):
+#         def implicit(self):
+#             print("PARENT implicit()")
+# class Child(Parent):
+#     pass
+# dad = Parent()
+# son = Child()
+# dad.implicit()
+# son.implicit()
+
+# Another example. Constructors being called with super()
+
+# class Character:
+#     def __init_(self, name, power, health):
+#         self.name = name 
+#         self.power = power
+#         self.health = health
+# class Hero(Character):
+#     def __init__(self, weapon, name, power, health):
+#         self.weapon = weapon
+#         super(Hero, self).__init__(name, power, health)
+    
+
+# Ali = Hero("Sword","Ali", "Lion", "Good health")
+# print(Ali.weapon)
+# Find out why its not working 
+
+# INDEPENDENT ASSIGNMENT:
+
+# class Vehicle:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#     def printInfo(self):
+#         print(f'{self.year}, {self.make}, {self.model}')  
+
+
+
+# car = Vehicle("Ford", "F150", "2015")
+# car.printInfo()
+
 class friends:
     def __init__ (self, fname, phone_number, email):
         self.fname = fname
         self.phone_number = phone_number
         self.email = email
     def greet(self, other_guy):
-        print('Hello {}, I am {}!'.format(other_guy.fname, self.fname)) #dont forget that self refers to the first person object
+        print(f'Hello {other_guy.fname}, I am {self.fname}!') #dont forget that self refers to the first person object
 
 
 sonny = friends("sonny", "832-220-9999", "sonny@hotmail.com")
@@ -110,4 +206,3 @@ sonny.greet(jordan)
 jordan.greet(sonny)
 print(f'Contact info of Sonny, {sonny.fname}, {sonny.phone_number}, {sonny.email}')
 print(f'Contact info of Jordan, {jordan.fname}, {jordan.phone_number}, {jordan.email}')
-
