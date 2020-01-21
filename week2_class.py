@@ -1,3 +1,5 @@
+#Tuesday 
+
 # class student:
 #     def __init__ (self): #Self is reference to the objects memory location
 #         print("constructor called") #Everytime object is created, Constructor is called. 
