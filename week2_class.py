@@ -197,13 +197,13 @@ class friends:
         self.phone_number = phone_number
         self.email = email
         self.my_friends = []
-        self.greeting_count = 0
+        # self.greeting_count = 0
         self.number_of_friends = len(self.my_friends)
-        self.greet_count += 1
+        # self.greet_count += 1
         
     def greet(self, other_guy):
         print(f'Hello {other_guy.fname}, I am {self.fname}!') #dont forget that self refers to the first person object
-        self.greet_count += 1
+        # self.greet_count += 1
     def print_contact_info(self):
         print(f'{self.phone_number}')
     def add_friend(self, name): # The friend which is passed into this method is added into friends list.
@@ -211,8 +211,8 @@ class friends:
         for O in self.my_friends:
             print(O.fname, O.email) 
             # Add a add_friend method
-    def num_friends(self):
-        self.number_of_friends = print(len(self.my_friends))
+    # def num_friends(self):
+    #     self.number_of_friends = print(len(self.my_friends))
     
 
     
@@ -220,11 +220,12 @@ class friends:
 
 sonny = friends("sonny", "832-220-9999", "sonny@hotmail.com")
 jordan = friends("jordan", "281-209-1333", "jordan@hotmail.com")
+
 sonny.greet(jordan)
-sonny.greeting_count
+# sonny.greeting_count
 jordan.greet(sonny)
 jordan.greet(sonny)
-jordan.greeting_count
+# jordan.greeting_count
 # sonny.print_contact_info()
 # jordan.print_contact_info()
 # sonny.my_friends.append(jordan)
@@ -234,4 +235,6 @@ jordan.greeting_count
 jordan.add_friend(sonny)
 jordan.add_friend(sonny)
 jordan.add_friend(sonny)
-jordan.num_friends() #since currently you added sonny as your friend 3 times. It counts 3 friends in your list.
+print(jordan.my_friends[0].fname) #will go to the list in the add_friends method in jordan object and give name.
+# jordan.num_friends() #since currently you added sonny as your friend 3 times. It counts 3 friends in your list.
+#^Need help with num_friends stuff
