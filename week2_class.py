@@ -238,3 +238,7 @@ jordan.add_friend(sonny)
 print(jordan.my_friends[0].fname) #will go to the list in the add_friends method in jordan object and give name.
 # jordan.num_friends() #since currently you added sonny as your friend 3 times. It counts 3 friends in your list.
 #^Need help with num_friends stuff
+
+
+#Wednesday class week 2
+#Composition 
