@@ -202,12 +202,13 @@ class friends:
         print(f'Hello {other_guy.fname}, I am {self.fname}!') #dont forget that self refers to the first person object
     def print_contact_info(self):
         print(f'{self.phone_number}')
-    def add_friend(self, name):
-        
+    def add_friend(self, name): # The friend which is passed into this method is added into friends list.
         self.my_friends.append(name)
-        # print(self.my_friends[0].fname)
         for O in self.my_friends:
-            print(O.fname, O.email)
+            print(O.fname, O.email) 
+            # Add a add_friend method
+    def num_friends(self):
+        number_of_friends = print(len(my_friends))
 
     
 
