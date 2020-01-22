@@ -208,7 +208,8 @@ class friends:
             print(O.fname, O.email) 
             # Add a add_friend method
     def num_friends(self):
-        number_of_friends = print(len(my_friends))
+        number_of_friends = print(len(self.my_friends))
+    
 
     
 
@@ -226,3 +227,4 @@ jordan = friends("jordan", "281-209-1333", "jordan@hotmail.com")
 jordan.add_friend(sonny)
 jordan.add_friend(sonny)
 jordan.add_friend(sonny)
+jordan.num_friends() #since currently you added sonny as your friend 3 times. It counts 3 friends in your list.
