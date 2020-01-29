@@ -6,21 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .body{
+        /* .body{
             margin: 0;
-        }
+        } */
         .header{
             height: 400px;
-            background-color: yellow;
+            background-color: green;
 
+        }
+        .imgContainer{
+            overflow: hidden;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            z-index: 20px;
+        }
+        .cityImg{
+            /* position: absolute;
+            left: -20px; */
+        }
+        .opacityContainer{
+            background-color: green;
+            height: 400px;
+            position: absolute;
+            top: 0px;
+            z-index: 20;
+            width: 100%;
+            opacity: 10%;
+        }
+        .textContainer{
+            z-index: 30;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
         }
 
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="imgContainer"></div>
-        <div class="textContainer"></div>
+        <div class="imgContainer">
+            <img class="cityImg" width="100%" src="https://www.outfrontmedia.com/-/media/images/ofm/markets/houston/houston-hero.ashx(255 kB)
+            " alt="">
+        </div>
+        <div class="textContainer">
+            <h1>Hey Houston!</h1>
+        </div>
         <div class="opacityContainer"></div>
     </div>
 
