@@ -4,46 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Class Assignment</title>
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            color: white;
+            font-size: 1.5em;
+        }
+        .parent a{
+            color: white;
+            text-decoration: none;
+        }
+        .parent a:hover{
+            text-decoration: underline;
+        }
+        .fg1{
+            flex-grow: 1;
+        }
+        .fg4{
+            flex-grow: 4;
+        }
+        /* #child1{
+            display: flex;
+        } */
+        #child2{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
-<style>
-    .background{
-        background-image: url(https://dc-houston.herokuapp.com/p2/HTMLCSS/Images/FlexBoxCenterImage.png);
-    
-    }
-    .firstKid{
-        display: inline-block;
-
-    }
-    .rest{
-        display:inline-block;
-    }
-    .Home{
-        display:inline-block
-    }
-    .Products{
-        display:inline-block
-    }
-    .About{
-        display: inline-block
-    }
-    .Careers{
-        display:inline-block
-    }
-</style>
 <body>
-    <nav class= "background">
-        <ul class= "firstKid">
-            <li><a href="#">Company Name</a></li>
-        </ul>
-        <ul class= "rest" >
-            <li class ="Home"><a href="#">Home</a></li>
-            <li class ="Products"><a href="#">Products</a></li>
-            <li class ="About"><a href="#">About</a></li>
-            <li class ="Careers"><a href="#">Careers</a></li>
-            <li class ="Contact"><a href="#">Contact</a></li>
-        </ul>
-
-    </nav>
+    <div id="parent" class="parent">
+        <div id="child1" class="fg4">Company name</div>
+        <div id="child2" class="fg1">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
