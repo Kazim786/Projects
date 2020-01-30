@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mosaic</title>
 </head>
 <style>
     .mainbody{
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        background-color: black;
 
     }
     .square{
-        
+        margin: 20;
+
+        flex: row;
+        border: black;
+
+
+    }
+    .square1{
+        background-color: red;
+        margin-left: 20px;
+
+    }
+    .square2{
+        background-color: limegreen;
+        color: white;
     }
 </style>
 <body>
     <div class="mainbody">
         <div class="square square1">
-
+            square 1
         </div>
+        <div class="square square2">
+            square 2
+        </div>
+
     </div>
     
 </body>
