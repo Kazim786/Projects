@@ -7,21 +7,43 @@
     <title>Class Assignment</title>
 </head>
 <style>
+    .background{
+        background-image: url(https://dc-houston.herokuapp.com/p2/HTMLCSS/Images/FlexBoxCenterImage.png);
     
+    }
+    .firstKid{
+        display: inline-block;
 
+    }
+    .rest{
+        display:inline-block;
+    }
+    .Home{
+        display:inline-block
+    }
+    .Products{
+        display:inline-block
+    }
+    .About{
+        display: inline-block
+    }
+    .Careers{
+        display:inline-block
+    }
 </style>
 <body>
-    <nav>
-        <ul>
+    <nav class= "background">
+        <ul class= "firstKid">
             <li><a href="#">Company Name</a></li>
         </ul>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class= "rest" >
+            <li class ="Home"><a href="#">Home</a></li>
+            <li class ="Products"><a href="#">Products</a></li>
+            <li class ="About"><a href="#">About</a></li>
+            <li class ="Careers"><a href="#">Careers</a></li>
+            <li class ="Contact"><a href="#">Contact</a></li>
         </ul>
+
     </nav>
 </body>
 </html>
