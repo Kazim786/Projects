@@ -2,7 +2,7 @@ import math
 a=0
 b=0
 c=0
-for i in range(1,1000): #max value for any side of the triangle must be less      than the semiperimeter
+for i in range(1,333): #max value for any side of the triangle must be less      than the semiperimeter
     
     for j in range(i,499):
         
