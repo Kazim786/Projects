@@ -6,43 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .header{
-            width: 200;
-            height: 100;
+            width: 100%;
+            height: 50px;
             text-align: center;
             background-color: gray;
-            border-color: black;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            border: 3px solid black;
+            padding: 10px;
+            font-size: 18px;
+
+            align-content: center;
 
         }
         .side-bar{
             text-align: center;
-            margin-right: 30%; 
+            /* margin-right: 30%;  */
             vertical-align: top;
-            background-color: white;
-            display: inline-block;
-            text-decoration-color: blue;
+            background-color: gray;
+            color: black;
+            float: left;
+            width: 25%;
+            height: 660px;
+            left: 0px;
+            margin-left: 0px;
 
         }
-        #main{
+        .main-content{
             text-align: center;
-            margin-right: auto;
-            margin-left: auto;
-            background-color: tomato;
-            display: inline-block;
+            background-color: hotpink;
+            width: 75%;
+            height: 660px;
+            text-align: center;
+            vertical-align: middle;
+            margin-left: 25%;
+            /* padding: 100%; */
+            /* float: left; */
         }
+        .footer{
+            clear: both;
+            background-color: green;
+            color: honeydew;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+            justify-content: center;
+            margin-bottom: 0px;}
+
+            h1, h2{
+                margin: 0px;
+            }
+            
+        
+        
     </style>
 </head>
 <body>
     <div>
-        <div id="header">
-        <h1>Header</h1>
+        <div class="header">
+            <h1>Header</h1>
+        </div>
 
     </div>
-    <div id="main">
+    <div class= "main">
         <div class="side-bar"><h2>sidebar</h2></div>
-        <div class="main content"><h2>main content</h2>main </div>
+        <div class="main-content"><h2>main content</h2>main </div>
     </div>
-    <div id= "footer">
+    <div class= "footer">
         <h1>footer</h1>
 
     </div>
