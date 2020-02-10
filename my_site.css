@@ -1,0 +1,16 @@
+.My_site{
+    background-color: turquoise;
+    
+}
+
+.header1{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+}
+.yugioh{
+    float: left;
+    height: 5px;
+    width: 10px;
+}
