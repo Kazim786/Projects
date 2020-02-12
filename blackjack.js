@@ -23,11 +23,7 @@ var BlackjackJS = (function() {
 	  this.suit = suit;
 	}
 
-	/*
-		Gets the value or points of the card
-		@param {Integer} currentTotal - The current total score of the
-		player's hand
-	*/
+	
 	Card.prototype.getValue = function(currentTotal){
 		var value = 0;
 
@@ -86,10 +82,8 @@ var BlackjackJS = (function() {
 		this.hand.push(card);
 	}
 
-	/*
-		Returns the total score of all the cards in the hand of a player
-	*/
-	Player.prototype.getScore = function(){
+	
+	Player.prototype.getPoints = function(){
 		var points = 0;
 		for(var i = 0; i < this.hand.length; i++){
 			if(i == 0) points = this.hand[i].getValue(0);
@@ -164,20 +158,18 @@ var BlackjackJS = (function() {
 			this.standButton.disabled = false;
 		}
 
-		/*
-			Hit button event handler
-		*/
+		
 		this.hitButtonHandler = function(){
-			//deal a card and add to player's hand
+			
 			var card = Deck.deck.pop();
 			this.player.hit(card);
 
-			//render the card and score
+			
 			document.getElementById(this.player.element).innerHTML += card.view();
-			this.playerScore.innerHTML = this.player.getScore();
+			this.playerPoints.innerHTML = this.player.getPoints();
 
-			//if over, then player looses
-			if(this.player.getScore() > 21){
+			
+			if(this.player.getPoints() > 21){
 				this.gameEnded('You lost!');
 			}
 		}
@@ -196,10 +188,10 @@ var BlackjackJS = (function() {
 
 				this.dealer.hit(card);
 				document.getElementById(this.dealer.element).innerHTML += card.view();
-				this.dealerScore.innerHTML = this.dealer.getScore();
+				this.dealerPoints.innerHTML = this.dealer.getPoints();
 
-				var playerBlackjack = this.player.getScore() == 21,
-						dealerBlackjack = this.dealer.getScore() == 21;
+				var playerBlackjack = this.player.getPoints() == 21,
+						dealerBlackjack = this.dealer.getPoints() == 21;
 
 				//Rule set
 				if(dealerBlackjack && !playerBlackjack) {
@@ -208,10 +200,10 @@ var BlackjackJS = (function() {
 				} else if(dealerBlackjack && playerBlackjack) {
 						this.gameEnded('Draw!');
 						break;
-				} else if(this.dealer.getScore() > 21 && this.player.getScore() <= 21) {
+				} else if(this.dealer.getPoints() > 21 && this.player.getPoints() <= 21) {
 						this.gameEnded('You won!');
 						break;
-				} else if(this.dealer.getScore() > this.player.getScore() && this.dealer.getScore() <= 21 && this.player.getScore() < 21) {
+				} else if(this.dealer.getPoints() > this.player.getPoints() && this.dealer.getPoints() <= 21 && this.player.getPoints() < 21) {
 						this.gameEnded('You lost!');
 						break;
 				}
@@ -223,8 +215,8 @@ var BlackjackJS = (function() {
 			Initialise
 		*/
 		this.init = function(){
-			this.dealerScore = document.getElementById('dealer-score').getElementsByTagName("span")[0];
-			this.playerScore = document.getElementById('player-score').getElementsByTagName("span")[0];
+			this.dealerPoints = document.getElementById('dealer-points').getElementsByTagName("span")[0];
+			this.playerPoints = document.getElementById('player-points').getElementsByTagName("span")[0];
 			this.dealButton = document.getElementById('deal');
 			this.hitButton = document.getElementById('hit');
 			this.standButton = document.getElementById('stand');
@@ -245,19 +237,19 @@ var BlackjackJS = (function() {
 			Deck.init();
 			Deck.shuffle();
 
-			//deal one card to dealer
+			
 			this.dealer = new Player('dealer', [Deck.deck.pop()]);
 
-			//deal two cards to player
+			
 			this.player = new Player('player', [Deck.deck.pop(), Deck.deck.pop()]);
 
-			//render the cards
+		
 			document.getElementById(this.dealer.element).innerHTML = this.dealer.showHand();
 			document.getElementById(this.player.element).innerHTML = this.player.showHand();
 
-			//renders the current scores
-			this.dealerScore.innerHTML = this.dealer.getScore();
-			this.playerScore.innerHTML = this.player.getScore();
+			
+			this.dealerPoints.innerHTML = this.dealer.getPoints();
+			this.playerPoints.innerHTML = this.player.getPoints();
 
 			this.setMessage("Hit or Stand");
 		}
