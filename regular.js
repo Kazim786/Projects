@@ -46,11 +46,10 @@ $(()=>{
     // $('body').keyup((e)=>{
     //     console.log(`Key Up: ${e.keyCode}`);
     // })
-    let $inputCount = $('input') // this will count everytime their is a key up
+    let $inputCount = $('input')
     $('input').keyup((e)=>{
-        console.log($inputCount.val()); //this will give inner content of what the user inputs
-
-
+        console.log($inputCount.val().length);
+        $('#count').html($inputCount.val().length);
     })
 })
 
