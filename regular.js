@@ -33,11 +33,19 @@ $(()=>{
     //     alert('you clicked on the yellow box')
 
     // })
-    $('p').on('click', ()=>{
-        alert('you clicked on the yellow box')
+    // $('p').on('click', ()=>{
+    //     alert('you clicked on the yellow box')
 
+    // })
+
+    $('body').keydown((e)=>{
+        //e just means any key
+        console.log(`Key Down: ${e.keyCode}`);
     })
 
+    $('body').keyup((e)=>{
+        console.log(`Key Up: ${e.keyCode}`);
+    })
 })
 
 //$ sign represents JQuery
