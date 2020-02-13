@@ -51,6 +51,12 @@ $(()=>{
         console.log($inputCount.val().length);
         $('#count').html($inputCount.val().length);
     })
+
+    $('#aButton').click((e)=>{
+
+        $('textarea').hide();
+        $('textarea').show();
+    })
 })
 
 //$ sign represents JQuery
