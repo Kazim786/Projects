@@ -29,10 +29,14 @@ $(()=>{
 
     // $('p').removeClass('myImage');
 
-    $('p').click(()=>{
-        alert('you clicked on the yellow box')
-    })
+    // $('p').click(()=>{
+    //     alert('you clicked on the yellow box')
 
+    // })
+    $('p').on('click', ()=>{
+        alert('you clicked on the yellow box')
+
+    })
 
 })
 
