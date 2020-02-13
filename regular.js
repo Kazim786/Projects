@@ -27,7 +27,12 @@ $(()=>{
     })
     $('div').append($img)
 
-    $('p').removeClass('myImage');
+    // $('p').removeClass('myImage');
+
+    $('p').click(()=>{
+        alert('you clicked on the yellow box')
+    })
+
 
 })
 
