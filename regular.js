@@ -3,6 +3,7 @@
 $(()=>{
     let result = $('div')
     console.log(result)
+    $('#paragraph') //to get ID 
 
 })
 
