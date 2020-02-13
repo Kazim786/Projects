@@ -38,13 +38,19 @@ $(()=>{
 
     // })
 
-    $('body').keydown((e)=>{
-        //e just means any key
-        console.log(`Key Down: ${e.keyCode}`);
-    })
+    // $('body').keydown((e)=>{
+    //     //e just means any key
+    //     console.log(`Key Down: ${e.keyCode}`);
+    // })
 
-    $('body').keyup((e)=>{
-        console.log(`Key Up: ${e.keyCode}`);
+    // $('body').keyup((e)=>{
+    //     console.log(`Key Up: ${e.keyCode}`);
+    // })
+    let $inputCount = $('input') // this will count everytime their is a key up
+    $('input').keyup((e)=>{
+        console.log($inputCount.html.length);
+
+
     })
 })
 
