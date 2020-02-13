@@ -1,14 +1,8 @@
-$(document).ready(()=>{
-    //jquery
 
-})
-
-$(function(){
-
-
-})
 
 $(()=>{
+    let result = $('div')
+    console.log(result)
 
 })
 
