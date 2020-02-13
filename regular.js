@@ -48,7 +48,7 @@ $(()=>{
     // })
     let $inputCount = $('input') // this will count everytime their is a key up
     $('input').keyup((e)=>{
-        console.log($inputCount.html.length);
+        console.log($inputCount.val()); //this will give inner content of what the user inputs
 
 
     })
