@@ -27,6 +27,8 @@ $(()=>{
     })
     $('div').append($img)
 
+    $('p').removeClass('myImage');
+
 })
 
 //$ sign represents JQuery
